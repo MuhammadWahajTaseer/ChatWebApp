@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class = "row">
+        <div class = "col-md-4">
+          <div id="containerUsers">
+            <h3>Online users:</h3>
+            <ul id="users"><li>Wahaj</li></ul>
+          </div>
+        </div>
+        <div class = "col-md-8">
+          <div id="containerMessages">
+              <h3>You are: </h3> <h3 id="yourName">Name</h3>
+            <div id="containerMSG">
+              <ul id="messages">
+
+                <table id="messageTable">
+                  <tr id ="messageRow">
+                    <td id="timeCol"></td>
+                    <td id="userCol"></td>
+                    <td id="messageCol"></td>
+                  </tr>
+                </table>
+
+              </ul>
+            </div>
+          </div>
+
+          <form action="">
+            <input id="m" autocomplete="off" /><button>Send</button>
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+    <script
+       src="https://code.jquery.com/jquery-3.1.1.min.js"
+       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+       crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

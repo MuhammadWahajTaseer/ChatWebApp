@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+  <body>
+
+    <div id="containerMain">
+
+      <div id="containerMessages">
+          <div id = "header">
+          <h3 style="background-color: #747d7a;  padding-left: 8px;">You are: </h3>
+          <h3 id="yourName" style="background-color: #747d7a;">Name</h3>
+        </div>
+        <div id="containerMSG">
+          <ul id="messages">
+
+            <table id="messageTable">
+              <tr id ="messageRow">
+                <td id="timeCol"></td>
+                <td id="userCol"></td>
+                <td id="messageCol"></td>
+              </tr>
+            </table>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="containerUsers">
+        <h3 style="color: white;">Online users:</h3>
+        <ul id="users"><li>Wahaj</li></ul>
+      </div>
+
+
+    </div>
+
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <script
+       src="https://code.jquery.com/jquery-3.1.1.min.js"
+       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+       crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
