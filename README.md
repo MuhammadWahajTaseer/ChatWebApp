@@ -2,7 +2,7 @@
 
 ## Directions   
   clone repository   
- $ npm install for node_modules   
+ $ npm install
  $ node index.js   
 redirect browser to localhost:3000   
 
